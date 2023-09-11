@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #A97E51;
+    border-bottom: 5px solid;
+    padding: 10px;
+
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #CAC38E;
+    padding: 10px;
+}
+
+p {
+    padding: 1em;
+    text-align: center;
+}

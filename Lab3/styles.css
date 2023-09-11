@@ -1,0 +1,33 @@
+p{
+    font-family: "Andale Mono", serif;
+}
+/*
+background color
+ */
+html{
+    background-color: antiquewhite;
+
+}
+/*
+making the envelope image smaller to make the text size similiar.
+ */
+img{
+    width: 50px;
+    height: 30px;
+}
+/*
+all fieldsets will have a different color to provide a nice offset to the background and show
+better seperation.
+ */
+fieldset{
+    background-color: #ffe9b9;
+    padding: 20px;
+    margin: 20px;
+}
+/*
+all links will have a hover color pop up to show the user they are hovering.
+ */
+a:hover{
+    background-color: aliceblue;
+}
+

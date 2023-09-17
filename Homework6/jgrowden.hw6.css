@@ -1,0 +1,57 @@
+ body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    background-color: #000000;
+}
+
+ /*
+ Flex Container to span the height of the viewport
+ to also center horizontaly and vertically
+  */
+ .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*
+The grid container below is for the numbers and operations of the calculator to be made into a 4x3
+and all of the cells are perfect squares
+ */
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*
+grid itmms, these are all of the items on the calculators screen from the results to all the numbers
+and operations as well as the equals button.
+thses are to be made center adn aligned for perfect squares wanted to also make the buttons have a nice contrast from
+the body of the calculator. Also giving the text a nice contrast and the results screen a different color.
+gave the buttons a small black border of 5 pixels.
+ */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93672A;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+/*
+to make the width of the results screen and the equals button wider than the other buttons to take more precedence.
+ */
+ .full-width {
+    grid-column: 1 / span 3;
+}

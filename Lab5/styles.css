@@ -1,0 +1,62 @@
+/*
+https://www.linkedin.com/in/jett-growden-4546b728b
+link to linkedin profile
+
+
+<a style="color: black; text-decoration: #ffe9b9; font-size: 35px"; href="https://www.linkedin.com/in/jett-growden-4546b728b
+">Jgrowden@uab.edu</a>
+link for linkedin integrated
+
+ */
+
+header{
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+
+}
+
+body{
+
+}
+
+fieldset{
+    height: 210px;
+    width: 175px;
+    padding: 20px;
+    margin: 20px;
+    border-color: #93672A;
+    border-width: 10px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+h4{
+    align-self: center;
+    align-content: center;
+}
+
+
+.Title{
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+}
+.paragraphs{
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: normal;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    background-color: #ffffff;
+    border-radius: 10px;
+}

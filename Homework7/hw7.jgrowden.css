@@ -1,0 +1,146 @@
+header {
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr); /* https://www.w3schools.com/cssref/pr_grid-template-columns.php ref for the code */
+    grid-auto-rows: 600px;
+    grid-gap: 10px;
+}
+/*to scale up */
+.grid-item:hover {
+    transform: scale(120%);
+}
+/*for text, magnifying glass, and darken effect*/
+.grid-item::before {
+
+    color: white;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    font-size: 18px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+}
+.grid-item:nth-child(1) {
+    background-image: url("IMG_3244.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(2) {
+    background-image: url("IMG_4285.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(3) {
+    background-image: url("IMG_4292.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(4) {
+    background-image: url("IMG_5249.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(5) {
+    background-image: url("IMG_6908.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(6) {
+    background-image: url("IMG_7547.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(7) {
+    background-image: url("IMG_7849.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(8) {
+    background-image: url("img.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(9) {
+    background-image: url("IMG_8381.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(1):hover::before {
+    content: "Our Pledge Class Last Fall";
+    opacity: 1;
+}
+.grid-item:nth-child(2):hover::before {
+    content: "donkey pic ";
+    opacity: 1;
+}
+.grid-item:nth-child(3):hover::before {
+    content: " My Friends and I before a date party.";
+    opacity: 1;
+}
+.grid-item:nth-child(4):hover::before {
+    content: "formal in new orleans last fall";
+    opacity: 1;
+}
+.grid-item:nth-child(5):hover::before {
+    content: "concert i went to in april at Avondale";
+    opacity: 1;
+}
+.grid-item:nth-child(6):hover::before {
+    content: "random image";
+    opacity: 1;
+}
+.grid-item:nth-child(7):hover::before {
+    content: "picture of me during a work trip over the summer in MA";
+    opacity: 1;
+}
+.grid-item:nth-child(8):hover::before {
+    content: "plane ride view from over the summer ";
+    opacity: 1;
+}
+.grid-item:nth-child(9):hover::before {
+    content: "song i like recently";
+    opacity: 1;
+}
+/* adding an after to make the content of the item the magnifying glass but make it invisble until hovered*/
+.grid-item::after {
+    opacity: 0;
+    content: "\1F50D"; /* unicode for a magnifying glass */
+    display: inline;
+
+}
+
+/*to ge the magnifying glass to appear on the screen*/
+.grid-item:nth-child(1):hover::after,
+.grid-item:nth-child(2):hover::after,
+.grid-item:nth-child(3):hover::after,
+.grid-item:nth-child(4):hover::after,
+.grid-item:nth-child(5):hover::after,
+.grid-item:nth-child(6):hover::after,
+.grid-item:nth-child(7):hover::after,
+.grid-item:nth-child(8):hover::after,
+.grid-item:nth-child(9):hover::after{
+    opacity: 1;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grades and Treats</title>
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+        //simple get grade function using an else if chain to decide the grade.
+    function getLetterGrade(grade) {
+        if (grade >= 90 && grade <= 100) {
+            return 'A';
+        } else if (grade >= 80) {
+            return 'B';
+        } else if (grade >= 70) {
+            return 'C';
+        } else if (grade >= 60) {
+            return 'D';
+        } else {
+            return 'F';
+        }
+    }
+
+
+        //function to get the treat from the grade, using a simple switch case
+    function getTreat(letterGrade) {
+        switch (letterGrade) {
+            case 'A':
+                return 'Candy';
+            case 'B':
+                return 'Apple';
+            case 'C':
+                return 'Mint';
+            case 'D':
+                return 'Pencil';
+            case 'F':
+                return 'Awkward conversation with parents';
+            default:
+                //if input does not apply the default case of unknown will be called
+                return 'Unknown';
+        }
+    }
+
+    function main() {
+
+        //main function to ensure that the program is being run.
+        let input = prompt("Enter grade:");
+        let grade = parseFloat(input);
+        //taking user input
+
+        if (!isNaN(grade)) {
+            let letterGrade = getLetterGrade(grade);
+            //getting the grade
+            let treat = getTreat(letterGrade);
+            //getting treat for grade
+
+            //showing results on page
+            document.body.innerHTML += '<p> Grade: ' + grade + '</p>';
+            document.body.innerHTML += '<p> Letter Grade: ' + letterGrade + '</p>';
+            document.body.innerHTML += '<p> Reward: ' + treat + '</p>';
+        } else {
+
+            //bonus error handling
+            console.error('Invalid Input');
+        }
+    }
+
+    main();
+</script>
+</body>
+</html>

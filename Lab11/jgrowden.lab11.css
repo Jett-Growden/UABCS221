@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Book Search */
+#searchContainer {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.author {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#bookDetails {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#bookDetails h2 {
+    margin-top: 0;
+}
+
+#bookDetails p {
+    margin-bottom: 10px;
+}
+
+#bookDetails img {
+    max-width: 100%;
+}
+
+#readingList {
+    margin-bottom: 10px;
+}
+
+#readingList .book {
+    position: relative;
+}
+
+
